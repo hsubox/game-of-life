@@ -1,16 +1,17 @@
 import React from 'react'
+import Grid from './Grid'
 import BoardSizeControls from './BoardSizeControls'
 import SpeedControls from './SpeedControls'
 // import VisibleTodoList from '../containers/VisibleTodoList'
 
 const App = () => (
   <div>
+    <Grid />
     <BoardSizeControls />
     <SpeedControls />
   </div>
 )
 
-//<Grid />
 //<RunSimulation />
 
 export default App

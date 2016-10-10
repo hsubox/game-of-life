@@ -2,9 +2,15 @@ import React, { PropTypes } from 'react'
 import Cell from './Cell'
 
 const Grid = () => (
-  <ul>
-    <Cell />
-  </ul>
+  <table>
+    <tbody>
+      <tr><Cell /><Cell /><Cell /><Cell /><Cell /></tr>
+      <tr><Cell /><Cell /><Cell /><Cell /><Cell /></tr>
+      <tr><Cell /><Cell /><Cell /><Cell /><Cell /></tr>
+      <tr><Cell /><Cell /><Cell /><Cell /><Cell /></tr>
+      <tr><Cell /><Cell /><Cell /><Cell /><Cell /></tr>
+    </tbody>
+  </table>
 )
 
 /*TodoList.propTypes = {
