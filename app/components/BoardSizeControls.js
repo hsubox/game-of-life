@@ -5,15 +5,15 @@ const BoardSizeControls = () => (
   <p>
     Board Size:
     {" "}
-    <SetBoardSizeLink size="S" width="50" height="30">
+    <SetBoardSizeLink size="S">
       Small
     </SetBoardSizeLink>
     {", "}
-    <SetBoardSizeLink size="M" width="70" height="50">
+    <SetBoardSizeLink size="M">
       Medium
     </SetBoardSizeLink>
     {", "}
-    <SetBoardSizeLink size="L" width="100" height="80">
+    <SetBoardSizeLink size="L">
       Large
     </SetBoardSizeLink>
   </p>

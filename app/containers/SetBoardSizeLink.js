@@ -11,7 +11,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(setBoardSize(ownProps.size, ownProps.width, ownProps.height))
+      dispatch(setBoardSize(ownProps.size))
     }
   }
 }

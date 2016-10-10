@@ -5,12 +5,10 @@ export const setSpeed = (speed) => {
   }
 }
 
-export const setBoardSize = (size, width, height) => {
+export const setBoardSize = (size) => {
   return {
     type: 'SET_BOARD_SIZE',
-    size,
-    width,
-    height
+    size
   }
 }
 
