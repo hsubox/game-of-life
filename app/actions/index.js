@@ -13,3 +13,10 @@ export const setBoardSize = (size, width, height) => {
     height
   }
 }
+
+export const changeSimulationStatus = (status) => {
+  return {
+    type: 'CHANGE_SIMULATION_STATUS',
+    status
+  }
+}

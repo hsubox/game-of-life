@@ -5,15 +5,15 @@ const SpeedControls = () => (
   <p>
     Sim Speed:
     {" "}
-    <SetSpeedLink speed="SIM_SPEED_SLOW">
+    <SetSpeedLink speed="SLOW">
       Slow
     </SetSpeedLink>
     {", "}
-    <SetSpeedLink speed="SIM_SPEED_MED">
+    <SetSpeedLink speed="MED">
       Medium
     </SetSpeedLink>
     {", "}
-    <SetSpeedLink speed="SIM_SPEED_FAST">
+    <SetSpeedLink speed="FAST">
       Fast
     </SetSpeedLink>
   </p>

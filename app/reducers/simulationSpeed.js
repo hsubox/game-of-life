@@ -1,4 +1,4 @@
-const simulationSpeed = (state = 'SIM_SPEED_FAST', action) => {
+const simulationSpeed = (state = 'FAST', action) => {
   switch (action.type) {
     case 'SET_SPEED':
       return action.speed
