@@ -1,25 +1,19 @@
 import React, { PropTypes } from 'react'
-import Todo from './Todo'
+import Cell from './Cell'
 
-const TodoList = ({ todos, onTodoClick }) => (
+const Grid = () => (
   <ul>
-    {todos.map(todo =>
-      <Todo
-        key={todo.id}
-        {...todo}
-        onClick={() => onTodoClick(todo.id)}
-      />
-    )}
+    <Cell />
   </ul>
 )
 
-TodoList.propTypes = {
+/*TodoList.propTypes = {
   todos: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     completed: PropTypes.bool.isRequired,
     text: PropTypes.string.isRequired
   }).isRequired).isRequired,
   onTodoClick: PropTypes.func.isRequired
-}
+}*/
 
-export default TodoList
+export default Grid

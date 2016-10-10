@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
-import todos from './todos'
-import visibilityFilter from './visibilityFilter'
+import simulationSize from './simulationSize'
+import simulationSpeed from './simulationSpeed'
 
-const todoApp = combineReducers({
-  todos,
-  visibilityFilter
+const gameOfLifeApp = combineReducers({
+  simulationSize,
+  simulationSpeed
 })
 
-export default todoApp
+export default gameOfLifeApp

@@ -1,24 +1,24 @@
 import { connect } from 'react-redux'
-import { setVisibilityFilter } from '../actions'
+import { setBoardSize } from '../actions'
 import Link from '../components/Link'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    active: ownProps.filter === state.visibilityFilter
+    active: ownProps.size === state.simulationSize
   }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(setVisibilityFilter(ownProps.filter))
+      dispatch(setBoardSize(ownProps.size, ownProps.width, ownProps.height))
     }
   }
 }
 
-const FilterLink = connect(
+const SetBoardSizeLink = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Link)
 
-export default FilterLink
+export default SetBoardSizeLink
