@@ -1,5 +1,5 @@
 import React from 'react'
-import Grid from './Grid'
+import GridContainer from '../containers/GridContainer'
 import GenerationContainer from '../containers/GenerationContainer'
 import RunSimulationControls from './RunSimulationControls'
 import BoardSizeControls from './BoardSizeControls'
@@ -8,7 +8,7 @@ import NextGenerationContainer from '../containers/NextGenerationContainer'
 
 const App = () => (
   <div>
-    <Grid />
+    <GridContainer />
     <GenerationContainer />
     <RunSimulationControls />
     <BoardSizeControls />
