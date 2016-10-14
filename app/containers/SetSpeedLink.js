@@ -4,7 +4,7 @@ import Link from '../components/Link'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    active: ownProps.speed === state.simulationSpeed
+    active: ownProps.speed === state.speed
   }
 }
 

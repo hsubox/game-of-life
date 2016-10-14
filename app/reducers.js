@@ -24,7 +24,7 @@ function reducers(state = initialState, action) {
     		return update(state, {status: action.status});
 
     	case 'INCREMENT_TIME':
-    		return update(state, {time: action.time});
+    		return update(state, {time: state.time + 1});
 
     	default: {
     		return state;

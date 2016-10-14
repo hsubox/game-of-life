@@ -18,3 +18,9 @@ export const changeStatus = (status) => {
     status
   }
 }
+
+export const incrementTime = () => {
+  return {
+    type: 'INCREMENT_TIME'
+  }
+}
