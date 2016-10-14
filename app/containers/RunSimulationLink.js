@@ -1,17 +1,17 @@
 import { connect } from 'react-redux'
-import { changeSimulationStatus } from '../actions'
+import { changeStatus } from '../actions'
 import Link from '../components/Link'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    active: ownProps.status === state.simulationStatus
+    active: ownProps.status === state.status
   }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(changeSimulationStatus(ownProps.status))
+      dispatch(changeStatus(ownProps.status))
     }
   }
 }
