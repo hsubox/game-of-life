@@ -14,7 +14,7 @@ function update(state, mutations) {
 
 function reducers(state = initialState, action) {
 	switch (action.type) {
-    	case 'SET_BOARD_SIZE':
+    	case 'SET_GRID_SIZE':
       		return update(state, {size: action.size });
 
     	case 'SET_SPEED':

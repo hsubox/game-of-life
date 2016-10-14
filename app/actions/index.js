@@ -5,9 +5,9 @@ export const setSpeed = (speed) => {
   }
 }
 
-export const setBoardSize = (size) => {
+export const setGridSize = (size) => {
   return {
-    type: 'SET_BOARD_SIZE',
+    type: 'SET_GRID_SIZE',
     size
   }
 }

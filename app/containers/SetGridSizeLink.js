@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { setBoardSize } from '../actions'
+import { setGridSize } from '../actions'
 import Link from '../components/Link'
 
 const mapStateToProps = (state, ownProps) => {
@@ -11,14 +11,14 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(setBoardSize(ownProps.size))
+      dispatch(setGridSize(ownProps.size))
     }
   }
 }
 
-const SetBoardSizeLink = connect(
+const SetGridSizeLink = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Link)
 
-export default SetBoardSizeLink
+export default SetGridSizeLink
