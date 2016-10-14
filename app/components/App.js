@@ -4,6 +4,7 @@ import GenerationContainer from '../containers/GenerationContainer'
 import RunSimulationControls from './RunSimulationControls'
 import BoardSizeControls from './BoardSizeControls'
 import SpeedControls from './SpeedControls'
+import NextGenerationContainer from '../containers/NextGenerationContainer'
 
 const App = () => (
   <div>
@@ -12,6 +13,7 @@ const App = () => (
     <RunSimulationControls />
     <BoardSizeControls />
     <SpeedControls />
+    <NextGenerationContainer />
   </div>
 )
 

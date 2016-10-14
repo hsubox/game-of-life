@@ -1,11 +1,12 @@
 import React, { PropTypes } from 'react'
 
-const GenerationDisplay = ({generation}) => {
-  return <p>Generation: {generation}</p>
+const GenerationDisplay = ({time}) => {
+  return <p>Generation: {time}</p>
 }
 
 GenerationDisplay.propTypes = {
-  generation: PropTypes.number.isRequired
+  time: PropTypes.number.isRequired
 }
 
 export default GenerationDisplay
+
