@@ -1,13 +1,15 @@
+import emptyGrid from './actions/emptyGrid'
 import randomizeGrid from './actions/randomizeGrid'
 import nextGenerationGrid from './actions/nextGenerationGrid'
 
 const initialState = {
 	time: 0,
 	size: 'S',
-	height: 30,
 	width: 50,
+	height: 30,
 	grid: [[0]],
 	speed: 'FAST',
+	interval: '500',
 	status: 'RUN'
 }
 
@@ -41,7 +43,8 @@ function reducers(state = initialState, action) {
 				});
     	case 'SET_SPEED':
     		return update(state, {
-					speed: action.speed
+					speed: action.speed,
+					interval: action.interval
 				});
     	case 'CHANGE_STATUS':
     		return update(state, {

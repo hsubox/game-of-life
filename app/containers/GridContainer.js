@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import Grid from '../components/Grid'
 import { setGrid, randomizeGrid } from '../actions/'
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   return {
     height: state.grid.length,
     width: state.grid[0].length,
@@ -10,7 +10,7 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
 	return {
     randomizeGrid: () => {
 			dispatch(randomizeGrid());

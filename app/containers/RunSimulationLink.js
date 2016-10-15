@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { changeStatus } from '../actions'
+import { clearGrid, changeStatus } from '../actions'
 import Link from '../components/Link'
 
 const mapStateToProps = (state, ownProps) => {
@@ -9,9 +9,17 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  return {
-    onClick: () => {
-      dispatch(changeStatus(ownProps.status))
+  if (ownProps.status == 'CLEAR') {
+    return {
+      onClick: () => {
+        dispatch(clearGrid())
+      }
+    }
+  } else {
+    return {
+      onClick: () => {
+        dispatch(changeStatus(ownProps.status))
+      }
     }
   }
 }

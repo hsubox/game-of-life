@@ -2,12 +2,6 @@ import { connect } from 'react-redux'
 import NextGeneration from '../components/NextGeneration'
 import { incrementTime } from '../actions'
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    
-  }
-}
-
 const mapDispatchToProps = (dispatch, ownProps) => {
 	return {
 		onClick: () => {
@@ -17,7 +11,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 const NextGenerationContainer = connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(NextGeneration)
 

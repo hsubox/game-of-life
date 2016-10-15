@@ -1,7 +1,14 @@
-export const setSpeed = (speed) => {
+export const setSpeed = (speed, interval) => {
   return {
     type: 'SET_SPEED',
-    speed
+    speed,
+    interval
+  }
+}
+
+export const clearGrid = () => {
+  return {
+    type: 'CLEAR_GRID'
   }
 }
 

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import GenerationDisplay from '../components/GenerationDisplay'
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   return {
     time: state.time
   }
