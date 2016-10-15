@@ -4,7 +4,7 @@ import Link from '../components/Link'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    active: ownProps.size === state.simulationSize
+    active: ownProps.size === state.size
   }
 }
 

@@ -1,0 +1,9 @@
+.cell {
+  width: 10px;
+  height: 10px;
+  background-color: lightgrey;
+}
+
+.alive {
+  background-color: purple;
+}

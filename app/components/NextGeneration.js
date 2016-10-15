@@ -9,7 +9,7 @@ const NextGeneration = ({onClick}) => {
 	         onClick()
 	       }}
 	    >
-		nextGeneration
+		Next Generation
 	</a></p>
 	)
 }

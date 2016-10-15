@@ -14,7 +14,10 @@ class Grid extends React.Component {
   displayCells(i,c) {
     var cols = [];
     for (var j=0; j<c; j++) {
-        cols.push(<td key={[i,j]}>{this.props.grid[i][j]}</td>);
+      var alive = this.props.grid[i][j];
+      cols.push(
+        <td key={[i,j]} className={alive ? "cell alive" : "cell"}></td>
+      );
     }
     return <tr key={[i]}>{cols}</tr>
   }
