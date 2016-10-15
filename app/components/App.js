@@ -4,7 +4,6 @@ import GenerationContainer from '../containers/GenerationContainer'
 import RunSimulationControls from './RunSimulationControls'
 import GridSizeControls from './GridSizeControls'
 import SpeedControls from './SpeedControls'
-import NextGenerationContainer from '../containers/NextGenerationContainer'
 
 const App = () => (
   <div>
@@ -13,7 +12,6 @@ const App = () => (
     <RunSimulationControls />
     <GridSizeControls />
     <SpeedControls />
-    <NextGenerationContainer />
   </div>
 )
 

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { clearGrid, changeStatus } from '../actions'
-import Link from '../components/Link'
+import Toggle from '../components/Toggle'
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -24,9 +24,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   }
 }
 
-const RunSimulationLink = connect(
+const RunSimulationToggle = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Link)
+)(Toggle)
 
-export default RunSimulationLink
+export default RunSimulationToggle

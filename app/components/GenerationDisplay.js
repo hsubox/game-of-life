@@ -9,4 +9,3 @@ GenerationDisplay.propTypes = {
 }
 
 export default GenerationDisplay
-

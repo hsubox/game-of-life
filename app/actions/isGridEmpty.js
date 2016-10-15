@@ -1,10 +1,11 @@
-// checks if 2-d grid is empty (all 0's)
-// returns true; otherwise false
+// Given: 2-d grid
+// checks if 2-d grid is empty (all 0's) -> true
+// Returns: boolean
 
 function isGridEmpty(grid) {
-  grid.every((r) => {
-    r.every((cell) => {
-      return cell = "0"
+  return grid.every((r) => {
+    return r.every((cell) => {
+      return cell == "0"
     })
   })
 }

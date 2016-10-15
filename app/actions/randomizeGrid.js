@@ -1,14 +1,14 @@
 import emptyGrid from './emptyGrid'
 
-// given dimensions r and c
-// generates the array (of size r*c) with randomly initialized grid
+// Given: dimensions r and c
+// Returns: random (0 or 1) array of dimensions r*c
+// Note: cellDensity represents likelihood of 1 appearing
 
 function randomizeGrid(r,c) {
 
-  const cellDensity = 0.25;
+  const cellDensity = 0.25
 
-  var grid = emptyGrid(r,c);
-
+  var grid = emptyGrid(r,c)
   grid = grid.map(function(row) {
     return row.map(function() {
       if (Math.random() < cellDensity) {
@@ -17,9 +17,8 @@ function randomizeGrid(r,c) {
         return 0
       }
     })
-  });
-
-  return grid;
+  })
+  return grid
 }
 
 export default randomizeGrid

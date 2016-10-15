@@ -40,7 +40,11 @@ class Grid extends React.Component {
 Grid.propTypes = {
   height: PropTypes.number.isRequired,
   width: PropTypes.number.isRequired,
-  grid: PropTypes.array.isRequired
+  grid: PropTypes.array.isRequired,
+  status: PropTypes.string.isRequired,
+  interval: PropTypes.number.isRequired,
+  randomizeGrid: PropTypes.func.isRequired,
+  incrementTime: PropTypes.func.isRequired
 }
 
 export default Grid

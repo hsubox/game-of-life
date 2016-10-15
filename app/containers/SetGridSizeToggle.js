@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { setGridSize } from '../actions'
-import Link from '../components/Link'
+import Toggle from '../components/Toggle'
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -16,9 +16,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   }
 }
 
-const SetGridSizeLink = connect(
+const SetGridSizeToggle = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Link)
+)(Toggle)
 
-export default SetGridSizeLink
+export default SetGridSizeToggle

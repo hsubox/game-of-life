@@ -1,20 +1,25 @@
 import React from 'react'
-import RunSimulationLink from '../containers/RunSimulationLink'
+import NextGenerationButton from '../containers/NextGenerationButton'
+import RunSimulationToggle from '../containers/RunSimulationToggle'
 
 const RunSimulationControls = () => (
   <p>
-    {" "}
-    <RunSimulationLink status="RUN">
+    {"Sim: "}
+    <NextGenerationButton>
+      Next
+    </NextGenerationButton>
+    {", "}
+    <RunSimulationToggle status="RUN">
       Run
-    </RunSimulationLink>
+    </RunSimulationToggle>
     {", "}
-    <RunSimulationLink status="PAUSE">
+    <RunSimulationToggle status="PAUSE">
       Pause
-    </RunSimulationLink>
+    </RunSimulationToggle>
     {", "}
-    <RunSimulationLink status="CLEAR">
+    <RunSimulationToggle status="CLEAR">
       Clear
-    </RunSimulationLink>
+    </RunSimulationToggle>
   </p>
 )
 

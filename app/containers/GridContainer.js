@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import Grid from '../components/Grid'
 import { setGrid, randomizeGrid, incrementTime } from '../actions/'
+import Grid from '../components/Grid'
 
 const mapStateToProps = (state) => {
   return {

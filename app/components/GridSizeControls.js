@@ -1,21 +1,21 @@
 import React from 'react'
-import SetGridSizeLink from '../containers/SetGridSizeLink'
+import SetGridSizeToggle from '../containers/SetGridSizeToggle'
 
 const GridSizeControls = () => (
   <p>
     Grid Size:
     {" "}
-    <SetGridSizeLink size="S" width="50" height="30">
+    <SetGridSizeToggle size="S" width="50" height="30">
       Small
-    </SetGridSizeLink>
+    </SetGridSizeToggle>
     {", "}
-    <SetGridSizeLink size="M" width="70" height="50">
+    <SetGridSizeToggle size="M" width="70" height="50">
       Medium
-    </SetGridSizeLink>
+    </SetGridSizeToggle>
     {", "}
-    <SetGridSizeLink size="L" width="100" height="80">
+    <SetGridSizeToggle size="L" width="100" height="80">
       Large
-    </SetGridSizeLink>
+    </SetGridSizeToggle>
   </p>
 )
 

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { setSpeed } from '../actions'
-import Link from '../components/Link'
+import Toggle from '../components/Toggle'
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -16,9 +16,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   }
 }
 
-const SetSpeedLink = connect(
+const SetSpeedToggle = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Link)
+)(Toggle)
 
-export default SetSpeedLink
+export default SetSpeedToggle
