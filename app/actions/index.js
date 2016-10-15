@@ -5,6 +5,19 @@ export const setSpeed = (speed) => {
   }
 }
 
+export const randomizeGrid = () => {
+  return {
+    type: 'RANDOMIZE_GRID'
+  }
+}
+
+export const setGrid = (grid) => {
+  return {
+    type: 'SET_GRID',
+    grid
+  }
+}
+
 export const setGridSize = (size) => {
   return {
     type: 'SET_GRID_SIZE',

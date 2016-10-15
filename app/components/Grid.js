@@ -1,7 +1,9 @@
 import React, { PropTypes } from 'react'
-import Cell from './Cell'
 
 class Grid extends React.Component {
+  componentWillMount() {
+    this.props.randomizeGrid();
+  }
   displayRows(r,c) {
     var rows = [];
     for (var i=0; i<r; i++) {
@@ -12,7 +14,7 @@ class Grid extends React.Component {
   displayCells(i,c) {
     var cols = [];
     for (var j=0; j<c; j++) {
-        cols.push(<Cell key={[i,j]} posX={i} posY={j}/>);
+        cols.push(<td key={[i,j]}>{this.props.grid[i][j]}</td>);
     }
     return <tr key={[i]}>{cols}</tr>
   }
@@ -27,7 +29,8 @@ class Grid extends React.Component {
 
 Grid.propTypes = {
   height: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired
+  width: PropTypes.number.isRequired,
+  grid: PropTypes.array.isRequired
 }
 
 export default Grid
