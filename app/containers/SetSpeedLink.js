@@ -11,7 +11,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(setSpeed(ownProps.speed, ownProps.interval))
+      dispatch(setSpeed(ownProps.speed, parseInt(ownProps.interval)))
     }
   }
 }

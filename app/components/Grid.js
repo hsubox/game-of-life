@@ -4,6 +4,13 @@ class Grid extends React.Component {
   componentWillMount() {
     this.props.randomizeGrid();
   }
+  componentDidUpdate() {
+    setTimeout(() => {
+      if (this.props.status == "RUN") {
+        this.props.incrementTime();
+      }
+    }, this.props.interval)
+  }
   displayRows(r,c) {
     var rows = [];
     for (var i=0; i<r; i++) {

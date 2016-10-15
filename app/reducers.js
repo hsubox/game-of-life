@@ -1,3 +1,4 @@
+import isGridEmpty from './actions/isGridEmpty'
 import emptyGrid from './actions/emptyGrid'
 import randomizeGrid from './actions/randomizeGrid'
 import nextGenerationGrid from './actions/nextGenerationGrid'
@@ -9,7 +10,7 @@ const initialState = {
 	height: 30,
 	grid: [[0]],
 	speed: 'FAST',
-	interval: '500',
+	interval: 1000,
 	status: 'RUN'
 }
 
@@ -22,8 +23,8 @@ function reducers(state = initialState, action) {
 			case 'CLEAR_GRID':
 				return update(state, {
 					grid: emptyGrid(state.height, state.width),
-					time: 0,
-					status: 'PAUSE'
+					time: 0//,
+					//status: 'PAUSE'
 				});
     	case 'SET_GRID_SIZE':
     		return update(state, {
@@ -53,7 +54,8 @@ function reducers(state = initialState, action) {
     	case 'INCREMENT_TIME':
     		return update(state, {
 					time: state.time + 1,
-					grid: nextGenerationGrid(state.grid)
+					grid: nextGenerationGrid(state.grid),
+					status: (state.status == "RUN" && isGridEmpty(state.grid)) ? "PAUSE" : state.status
 				});
     	default: {
     		return state;
