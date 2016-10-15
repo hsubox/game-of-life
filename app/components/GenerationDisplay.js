@@ -1,7 +1,11 @@
 import React, { PropTypes } from 'react'
 
 const GenerationDisplay = ({time}) => {
-  return <p>Generation: {time}</p>
+  return (
+    <p className="generation-display">
+      Generation: {time}
+    </p>
+  )
 }
 
 GenerationDisplay.propTypes = {

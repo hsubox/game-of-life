@@ -1,9 +1,27 @@
+.grid-container {
+  margin: auto;
+}
+
+#grid {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .cell {
+  min-width: 10px;
   width: 10px;
+  min-height: 10px;
   height: 10px;
   background-color: lightgrey;
 }
 
 .alive {
   background-color: purple;
+}
+
+.generation-display, .run-simulation-controls, .grid-size-controls, .speed-controls {
+  text-align: center;
 }

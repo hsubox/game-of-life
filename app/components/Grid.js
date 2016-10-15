@@ -30,9 +30,11 @@ class Grid extends React.Component {
   }
   render() {
     return (
-      <table>
-        {this.displayRows(this.props.height,this.props.width)}
-      </table>
+      <div className="grid-container">
+        <table id="grid">
+          {this.displayRows(this.props.height,this.props.width)}
+        </table>
+      </div>
     )
   }
 }

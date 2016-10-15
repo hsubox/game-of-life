@@ -2,8 +2,8 @@ import React from 'react'
 import SetGridSizeToggle from '../containers/SetGridSizeToggle'
 
 const GridSizeControls = () => (
-  <p>
-    Grid Size:
+  <p className="grid-size-controls">
+    Size:
     {" "}
     <SetGridSizeToggle size="S" width="50" height="30">
       Small

@@ -3,8 +3,7 @@ import NextGenerationButton from '../containers/NextGenerationButton'
 import RunSimulationToggle from '../containers/RunSimulationToggle'
 
 const RunSimulationControls = () => (
-  <p>
-    {"Sim: "}
+  <p className="run-simulation-controls">
     <NextGenerationButton>
       Next
     </NextGenerationButton>

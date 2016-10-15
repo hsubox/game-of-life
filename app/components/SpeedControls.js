@@ -2,8 +2,8 @@ import React from 'react'
 import SetSpeedToggle from '../containers/SetSpeedToggle'
 
 const SpeedControls = () => (
-  <p>
-    Sim Speed:
+  <p className="speed-controls">
+    Speed:
     {" "}
     <SetSpeedToggle speed="SLOW" interval="3000">
       Slow
