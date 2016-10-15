@@ -11,7 +11,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(setGridSize(ownProps.size))
+      dispatch(setGridSize(ownProps.size, parseInt(ownProps.width), parseInt(ownProps.height)))
     }
   }
 }

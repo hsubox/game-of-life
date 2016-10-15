@@ -27,7 +27,9 @@ function reducers(state = initialState, action) {
     		return update(state, {
 					size: action.size,
 					height: action.height,
-					width: action.width
+					width: action.width,
+					grid: randomizeGrid(action.height, action.width),
+					time: 0
 				});
 			case 'RANDOMIZE_GRID':
 				return update(state, {

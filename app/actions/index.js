@@ -18,10 +18,12 @@ export const setGrid = (grid) => {
   }
 }
 
-export const setGridSize = (size) => {
+export const setGridSize = (size, width, height) => {
   return {
     type: 'SET_GRID_SIZE',
-    size
+    size,
+    width,
+    height
   }
 }
 
