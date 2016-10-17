@@ -52,6 +52,7 @@ function reducers(state = initialState, action) {
 					status: action.status
 				});
     	case 'INCREMENT_TIME':
+				console.log(new Date());
     		return update(state, {
 					time: state.time + 1,
 					grid: nextGenerationGrid(state.grid),

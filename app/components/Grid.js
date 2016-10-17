@@ -1,15 +1,21 @@
 import React, { PropTypes } from 'react'
 
+var cleared = true; // this prevents multiple timers from being triggered
+
 class Grid extends React.Component {
   componentWillMount() {
     this.props.randomizeGrid();
   }
   componentDidUpdate() {
-    setTimeout(() => {
-      if (this.props.status == "RUN") {
-        this.props.incrementTime();
-      }
-    }, this.props.interval)
+    if (cleared == true) {
+      var x = setTimeout(() => {
+        cleared = true;
+        if (this.props.status == "RUN") {
+          this.props.incrementTime();
+        }
+      }, this.props.interval)
+      cleared = false;
+    }
   }
   displayRows(r,c) {
     var rows = [];
