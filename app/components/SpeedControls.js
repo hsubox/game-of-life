@@ -5,15 +5,15 @@ const SpeedControls = () => (
   <p className="speed-controls">
     Speed:
     {" "}
-    <SetSpeedToggle speed="SLOW" interval="3000">
+    <SetSpeedToggle speed="SLOW" interval="5000">
       Slow
     </SetSpeedToggle>
     {", "}
-    <SetSpeedToggle speed="MED" interval="1500">
+    <SetSpeedToggle speed="MED" interval="3000">
       Medium
     </SetSpeedToggle>
     {", "}
-    <SetSpeedToggle speed="FAST" interval="700">
+    <SetSpeedToggle speed="FAST" interval="1500">
       Fast
     </SetSpeedToggle>
   </p>

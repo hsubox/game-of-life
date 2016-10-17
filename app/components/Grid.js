@@ -23,7 +23,7 @@ class Grid extends React.Component {
     for (var j=0; j<c; j++) {
       var alive = this.props.grid[i][j];
       cols.push(
-        <td key={[i,j]} className={alive ? "cell alive" : "cell"}></td>
+        <td key={[i,j]} data-ij={[i,j]} className={alive ? "cell alive" : "cell"} onClick={this.props.onCellClick.bind(undefined,i,j)}></td>
       );
     }
     return <tr key={[i]}>{cols}</tr>

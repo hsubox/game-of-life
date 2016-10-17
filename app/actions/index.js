@@ -1,27 +1,6 @@
-export const setSpeed = (speed, interval) => {
-  return {
-    type: 'SET_SPEED',
-    speed,
-    interval
-  }
-}
-
 export const clearGrid = () => {
   return {
     type: 'CLEAR_GRID'
-  }
-}
-
-export const randomizeGrid = () => {
-  return {
-    type: 'RANDOMIZE_GRID'
-  }
-}
-
-export const setGrid = (grid) => {
-  return {
-    type: 'SET_GRID',
-    grid
   }
 }
 
@@ -31,6 +10,28 @@ export const setGridSize = (size, width, height) => {
     size,
     width,
     height
+  }
+}
+
+export const randomizeGrid = () => {
+  return {
+    type: 'RANDOMIZE_GRID'
+  }
+}
+
+export const modifyCell = (i,j) => {
+  return {
+    type: 'MODIFY_CELL',
+    i,
+    j
+  }
+}
+
+export const setSpeed = (speed, interval) => {
+  return {
+    type: 'SET_SPEED',
+    speed,
+    interval
   }
 }
 

@@ -22,9 +22,9 @@ function nextGenerationGrid(cells) {
       var n_total = n1+n2+n3+n4+n5+n6+n7+n8
 
       if (n_total == 3 || (n_total == 2 && cells[i][j] == 1)) {
-        return 1
+        return 1 // alive
       }
-      return 0
+      return 0 // dead
     })
   })
 

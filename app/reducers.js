@@ -2,6 +2,7 @@ import isGridEmpty from './actions/isGridEmpty'
 import emptyGrid from './actions/emptyGrid'
 import randomizeGrid from './actions/randomizeGrid'
 import nextGenerationGrid from './actions/nextGenerationGrid'
+import modifyCell from './actions/modifyCell'
 
 const initialState = {
 	time: 0,
@@ -23,8 +24,7 @@ function reducers(state = initialState, action) {
 			case 'CLEAR_GRID':
 				return update(state, {
 					grid: emptyGrid(state.height, state.width),
-					time: 0//,
-					//status: 'PAUSE'
+					time: 0
 				});
     	case 'SET_GRID_SIZE':
     		return update(state, {
@@ -38,9 +38,9 @@ function reducers(state = initialState, action) {
 				return update(state, {
 					grid: randomizeGrid(state.height, state.width)
 				});
-			case 'SET_GRID':
+			case 'MODIFY_CELL':
 				return update(state, {
-					grid: action.grid
+					grid: modifyCell(action.i, action.j, state.grid)
 				});
     	case 'SET_SPEED':
     		return update(state, {

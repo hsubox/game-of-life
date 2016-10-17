@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { setGrid, randomizeGrid, incrementTime } from '../actions/'
+import { modifyCell, randomizeGrid, incrementTime } from '../actions/'
 import Grid from '../components/Grid'
 
 const mapStateToProps = (state) => {
@@ -19,6 +19,9 @@ const mapDispatchToProps = (dispatch) => {
     },
     incrementTime: () => {
 			dispatch(incrementTime());
+    },
+    onCellClick: (i, j) => {
+      dispatch(modifyCell(i, j));
     }
 	}
 }
