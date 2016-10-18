@@ -3,7 +3,7 @@ import SetSpeedToggle from '../containers/SetSpeedToggle'
 
 const SpeedControls = () => (
   <p className="speed-controls">
-    Speed:
+    <strong>Speed:</strong>
     {" "}
     <SetSpeedToggle speed="SLOW" interval="5000">
       Slow
