@@ -57,3 +57,5 @@ To view, open the following in your browser:
 ```
 ./dist/index.html
 ```
+## Screenshot
+![screenshot](screenshot.gif)
