@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "production": "webpack -p",
+    "production": "webpack -p --define process.env.NODE_ENV='\"production\"'",
     "start": "webpack-dev-server",
     "watch": "webpack -p --progress --colors --watch"
   },
