@@ -5,9 +5,9 @@
 function isGridEmpty(grid) {
   return grid.every((r) => {
     return r.every((cell) => {
-      return cell == "0"
-    })
-  })
+      return cell == '0';
+    });
+  });
 }
 
-export default isGridEmpty
+export default isGridEmpty;

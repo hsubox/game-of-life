@@ -1,6 +1,6 @@
-import { connect } from 'react-redux'
-import { modifyCell, randomizeGrid, incrementTime } from '../actions/'
-import Grid from '../components/Grid'
+import {connect} from 'react-redux';
+import {modifyCell, randomizeGrid, incrementTime} from '../actions/';
+import Grid from '../components/Grid';
 
 const mapStateToProps = (state) => {
   return {
@@ -8,9 +8,9 @@ const mapStateToProps = (state) => {
     width: state.grid[0].length,
     grid: state.grid,
     status: state.status,
-    interval: state.interval
-  }
-}
+    interval: state.interval,
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
 	return {
@@ -22,13 +22,13 @@ const mapDispatchToProps = (dispatch) => {
     },
     onCellClick: (i, j) => {
       dispatch(modifyCell(i, j));
-    }
-	}
-}
+    },
+	};
+};
 
 const GridContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Grid)
+)(Grid);
 
-export default GridContainer
+export default GridContainer;

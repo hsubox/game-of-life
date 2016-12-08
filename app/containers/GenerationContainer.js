@@ -1,14 +1,12 @@
-import { connect } from 'react-redux'
-import GenerationDisplay from '../components/GenerationDisplay'
+import {connect} from 'react-redux';
+import GenerationDisplay from '../components/GenerationDisplay';
 
 const mapStateToProps = (state) => {
   return {
-    time: state.time
-  }
-}
+    time: state.time,
+  };
+};
 
-const GenerationContainer = connect(
-  mapStateToProps
-)(GenerationDisplay)
+const GenerationContainer = connect(mapStateToProps)(GenerationDisplay);
 
-export default GenerationContainer
+export default GenerationContainer;
