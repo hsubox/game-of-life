@@ -57,5 +57,9 @@ To view, open the following in your browser:
 ```
 ./dist/index.html
 ```
+## Demo
+
+View working demo at [http://jennhsu.com/gameoflife/](http://jennhsu.com/gameoflife/)
+
 ## Screenshot
 ![screenshot](screenshot.gif)
